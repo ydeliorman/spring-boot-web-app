@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="module2" />
+        <module name="spring-boot-hotel-web-app" />
+        <module name="client-app" />
+        <module name="web-app" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client-app" target="1.13" />
+      <module name="module2" target="13" />
+      <module name="spring-boot-hotel-web-app" target="13" />
+      <module name="web-app" target="13" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client-app" options="-parameters" />
+      <module name="module2" options="-parameters" />
+      <module name="spring-boot-hotel-web-app" options="-parameters" />
+      <module name="web-app" options="-parameters" />
+    </option>
+  </component>
+</project>
