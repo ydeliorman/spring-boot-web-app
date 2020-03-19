@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/cleaner-consumer/cleaner-consumer.iml" filepath="$PROJECT_DIR$/cleaner-consumer/cleaner-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/client-app/client-app.iml" filepath="$PROJECT_DIR$/client-app/client-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-hotel-web-app.iml" filepath="$PROJECT_DIR$/spring-boot-hotel-web-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-app/web-app.iml" filepath="$PROJECT_DIR$/web-app/web-app.iml" />
