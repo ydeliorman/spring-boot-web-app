@@ -14,15 +14,17 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 public class ApiController {
+
     private RoomServices roomServices;
 
     @Autowired
-    public ApiController(RoomServices roomServices) {
+    public ApiController(RoomServices roomServices){
+        super();
         this.roomServices = roomServices;
     }
 
     @GetMapping("/rooms")
-    public List<Room> getAllRooms() {
-        return roomServices.getAllRooms();
+    public List<Room> getAllRooms(){
+        return this.roomServices.getAllRooms();
     }
 }

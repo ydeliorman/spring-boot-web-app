@@ -16,13 +16,14 @@ public class RoomController {
     private RoomServices roomServices;
 
     @Autowired
-    public RoomController(RoomServices roomServices) {
+    public RoomController(RoomServices roomServices){
+        super();
         this.roomServices = roomServices;
     }
 
     @GetMapping
-    public String getAllRooms(Model model) {
-        model.addAttribute("rooms", roomServices.getAllRooms());
+    public String getAllRooms(Model model){
+        model.addAttribute("rooms", this.roomServices.getAllRooms());
         return "rooms";
     }
 }
